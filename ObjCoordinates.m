@@ -70,7 +70,7 @@ end % classdef
 
         function [XYZ] = getCoord(Image)
 
-            [Row Col Value] = find(Image>0);
+            [Row Col Value] = find(Image>0); % irgendwie muss ich hier noch die größe einbauen....
 
             XYZ = [Row, Col, Value];
 
